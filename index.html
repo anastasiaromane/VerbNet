@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VerbNet</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Verbnet</h1></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs active">
+              <a href="index.html"> Главная</a>
+            </li>
+            <li>
+              <a href="verbs.html"><br class="hidden-xs"> Глаголы</a>
+            </li>
+            <li>
+              <a href="graphs.html"><br class="hidden-xs"> Графы</a>
+            </li>
+            <li>
+              <a href="verbnet.html"><br class="hidden-xs"> Verbnet</a>
+            </li>
+            <li>
+              <a href="about.html"><br class="hidden-xs"> О проекте</a>
+            </li>
+            <li>
+              <a href="contacts.html"><br class="hidden-xs"> Контакты</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+
+  <div id="main-content">
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Что такое VerbNet?</h2>
+        <div class="description">
+          <p>VerbNet (Глагольный WordNet) – это электронная база русских глаголов, которые собраны в определенные синонимические ряды (синсеты). </p>
+        </div>
+        <p><a class="btn btn-primary btn-lg" href="verbnet.html" role="button"> Узнать больше</a></p>
+      </div>
+    
+
+      <div id="home-tiles" class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="verbs.html"><div id="verb-tile"><span> Глаголы</span></div></a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="graphs.html"><div id="graph-tile"><span> Графы</span></div></a>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <a href="about.html"><div id="project-tile"><span> О проекте</span></div></a>
+        </div>
+        </div>
+      </div><!-- End of #home-tiles -->
+    </div>
+  </div><!-- End of #main-content -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="first-column" class="col-sm-4">
+          <a href="index.html"> Verbnet</a>
+          <hr class="visible-xs">
+        </section>
+        <section id="second-column" class="col-sm-4">
+          <span><a href="verbs.html"> Глаголы</a></span><br>
+          <a href="graphs.html"> Графы</a><br>
+          <hr class="visible-xs">
+        </section>
+        <section id="third-column" class="col-sm-4">
+          <span><a href="about.html"> О проекте</a></span><br>
+          <a href="contact.html"> Контакты</a><br>
+          <hr class="visible-xs">
+        </section>
+      </div>
+      <div class="text-center">&copy; Anastasia Romanova 2016</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
