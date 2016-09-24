@@ -127,47 +127,52 @@ body {
 
 .btn {
   background-color: rgb(109, 204, 156);
-  border: 0;
+  border-width: 0;
+  border-radius: 0;
+  color: #fff; 
+/*  font-size: 0.75em;
+  font-weight: 300;*/
 }
-#verb-tile, #graph-tile, #project-tile {
-  height: 250px;
-  width: 100%;
+.centered{
   text-align: center;
-  margin: 20;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
+
 }
-#verb-tile:hover, #graph-tile:hover, #project-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-#verb-tile {
-  background: white no-repeat;
-  background-position: center;
-}
-#graph-tile {
-  background: white no-repeat;
-  background-position: center;
-}
-#verb-tile span, #graph-tile span, #project-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
+/*.centered a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}*/
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
 }
+.marketing h3 {
+  font-weight: normal;
+  font-family: "Open Sans","Helvetica Neue","Helvetica", "Helvetica","Arial", sans-serif;
+  color: #30333a;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 130px;
+  color: #30333a;
+}
+
 /* END HOME PAGE */
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
-    height: 500px;
+    height: 350px;
   }
 }
 
@@ -176,7 +181,7 @@ body {
 
   /* Home Page */
   .container .jumbotron {
-    height: 300px;
+    height: 280px;
   }
   /* End Home Page */
 }
