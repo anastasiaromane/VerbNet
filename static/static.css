@@ -6,6 +6,7 @@ body {
   padding-top: 110px;
 }
 
+
 /** HEADER **/
 #header-nav {
   background-color: #FFFFFF;
@@ -30,7 +31,6 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-
 #nav-list {
   margin-top: 10px;
 }
@@ -49,13 +49,13 @@ body {
   color: #0C0C0C;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+/*.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #9599a1;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -55px;
-}
+}*/
 /* END HEADER */
 
 /* FOOTER */
@@ -99,8 +99,6 @@ body {
 
 /* END FOOTER */
 
-
-
 /* HOME PAGE */
 
 .container .jumbotron {
@@ -123,6 +121,7 @@ body {
   color: black;
   font-size: 1.75em;
   text-align: center;
+  margin-top: 1.50em;
 }
 
 .btn {
@@ -135,7 +134,10 @@ body {
 }
 .centered{
   text-align: center;
+}
 
+.centeres, .btn {
+  margin-top: 1.50em;
 }
 /*.centered a:hover {
   cursor: pointer;
@@ -154,7 +156,7 @@ body {
   font-weight: normal;
   font-family: "Open Sans","Helvetica Neue","Helvetica", "Helvetica","Arial", sans-serif;
   color: #30333a;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 1.4;
@@ -166,34 +168,45 @@ body {
   color: #30333a;
 }
 
+.marketing .col-lg-4 img {
+  border: 1px solid #9599a1;
+}
 /* END HOME PAGE */
 
-
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  .container .jumbotron {
-    height: 350px;
-  }
-}
+@media (min-width: 1200px) {}
+
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
-  /* Home Page */
-  .container .jumbotron {
-    height: 280px;
+  /* Header */
+  .navbar-brand h1 { /* Project name */
+    padding-top: 5px;
+    font-size: 2em;
+    padding-left: 20px;
   }
-  /* End Home Page */
+  /* End Header */
 }
+
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  .container .jumbotron {
-    height: 200px;
+  /* Header */
+  .navbar-brand {
+    padding-top: 25px;
+    height: 80px;
   }
-  /* End Home Page */
+  .navbar-brand h1 { /* Project name */
+    /*padding-top: 5px;*/
+    font-size: 4.5vw;
+    /*padding-left: 20px;*/
+  }
+  #myNavbar a { /* Nav list text */
+    font-size: 0.8em;
+  }
+  /* End Header */
 }
+
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -203,15 +216,16 @@ body {
     height: 80px;
   }
   .navbar-brand h1 { /* Project name */
-    padding-top: 20px;
+    padding-top: 5px;
+    font-size: 5.0vw;
     padding-left: 20px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-
-  #collapsable-nav a { /* Collapsed nav text */
-    font-size: 1em;
+  #myNavbar a { /* Collapsed nav text */
+    font-size: 0.8em;
   }
-
+  .navbar-toggle {
+    margin-top: 1.75em;
+  }
   /* End Header */
 
   /* Footer */
@@ -226,17 +240,6 @@ body {
     width: 50%;
   }
   /* End Footer */
-
-  /* Home Page */
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
-  #verb-tile, #graph-tile {
-    width: 360px;
-    margin: 0 auto 15px;
-  }
-
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -244,27 +247,15 @@ body {
   /* Header */
   .navbar-brand h1 { /* Project name */
     padding-top: 5px;
-    font-size: 6.5vw;
+    font-size: 5.5vw;
   }
-  #collapsable-nav a { /* Collapsed nav text */
+  #myNavbar a { /* Collapsed nav text */
     font-size: 0.8em;
   }
+  .navbar-toggle {
+    margin-top: 1.75em;
+  }
   /* End Header */
-  
-  /* Home page */
-  #verb-tile, #graph-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
-
-  .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
-    width: 100%;
-  }
 }
 
 
