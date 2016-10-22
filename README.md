@@ -1,1 +1,1 @@
-# djangogirls-app
+# VerbNet
