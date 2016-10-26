@@ -48,15 +48,9 @@ body {
 #nav-list a:hover {
   color: #0C0C0C;
 }
-
-/*.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #9599a1;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -55px;
-}*/
 /* END HEADER */
+
+
 
 /* FOOTER */
 .panel-footer {
@@ -96,8 +90,9 @@ body {
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-
 /* END FOOTER */
+
+
 
 /* HOME PAGE */
 
@@ -129,20 +124,48 @@ body {
   border-width: 0;
   border-radius: 0;
   color: #fff; 
-/*  font-size: 0.75em;
-  font-weight: 300;*/
 }
-.centered{
+
+.centered {
   text-align: center;
 }
 
-.centeres, .btn {
-  margin-top: 1.50em;
+
+
+/*CONTACT PAGE*/
+
+.contact-page .col-lg-6 {
+  margin-bottom: 20px;
+  text-align: center;
 }
-/*.centered a:hover {
-  cursor: pointer;
-  text-decoration: none;
-}*/
+
+.contact-page h2 {
+  font-weight: normal;
+  color: #30333a;
+  font-size: 1.35em;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.contact-page p {
+  color: black;
+  font-size: 1em;
+}
+
+.contact-info a {
+  color: #30333a;
+  font-size: 1em;
+  text-transform: lowercase;
+}
+.alert {
+  color: black;
+}
+.ok-button {
+  background-color: rgb(109, 204, 156);
+}
+/*END OF CONTACT PAGE*/
+
+
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
