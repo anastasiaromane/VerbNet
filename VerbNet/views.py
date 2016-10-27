@@ -42,11 +42,11 @@ def sendemail(request):
             message = form.cleaned_data['message']
             mess = 'Thank you for your message.'
 
-            recipients = ['verbnet@gmail.com']
+            recipients = ['rus.verbnet@gmail.com']
 
             if name and message and sender:
                 try:
-                    send_mail(name, message, sender, recipients)
+                    send_mail(name, message, sender, recipients, fail_silently=False)
                 except BadHeaderError:
                     return HttpResponse('Invalid header found.')
 
