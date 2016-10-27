@@ -46,7 +46,7 @@ def sendemail(request):
 
             if name and message and sender:
                 try:
-                    send_mail(name, message, sender, recipients, fail_silently=False)
+                    send_mail(name, message + '\n' + sender, sender, recipients, fail_silently=False)
                 except BadHeaderError:
                     return HttpResponse('Invalid header found.')
 
