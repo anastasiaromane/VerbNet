@@ -130,7 +130,43 @@ body {
   text-align: center;
 }
 
+.text-justify p {
+  padding-top: 20px;
+  font-size: 1.15em;
+}
+.list-unstyled a {
+  color: black;
+  font-size: 1em;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
 
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h3 {
+  font-weight: normal;
+  font-family: "Open Sans","Helvetica Neue","Helvetica", "Helvetica","Arial", sans-serif;
+  color: #30333a;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 130px;
+  color: #30333a;
+  margin-bottom: -20px;
+}
+
+.marketing .col-lg-4 img {
+  border: 1px solid #9599a1;
+}
+/* END HOME PAGE */
 
 /*CONTACT PAGE*/
 
@@ -163,38 +199,6 @@ body {
   background-color: rgb(109, 204, 156);
 }
 /*END OF CONTACT PAGE*/
-
-
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h3 {
-  font-weight: normal;
-  font-family: "Open Sans","Helvetica Neue","Helvetica", "Helvetica","Arial", sans-serif;
-  color: #30333a;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-  height: 130px;
-  color: #30333a;
-}
-
-.marketing .col-lg-4 img {
-  border: 1px solid #9599a1;
-}
-/* END HOME PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {}
