@@ -10,23 +10,30 @@ from django.core.mail import mail_admins
 from django.conf import settings
 from django.http import JsonResponse
 
+
 def index(request):
     return render(request, 'VerbNet/index.html', {})
+
 
 def verbs(request):
     return render(request, 'VerbNet/verbs.html', {})
 
+
 def graphs(request):
     return render(request, 'VerbNet/graphs.html', {})
+
 
 def verbnet(request):
     return render(request, 'VerbNet/verbnet.html', {})
 
+
 def about(request):
     return render(request, 'VerbNet/about.html', {})
 
+
 # def contacts(request):
 #     return render(request, 'VerbNet/contacts.html', {})
+
 
 # def thanks(request):
 #     return HttpResponse('Thank you for your message.')
@@ -55,4 +62,4 @@ def sendemail(request):
     else:
       form = ContactForm()
     return render(request, 'VerbNet/contacts.html', {'form': form})
-
+    

@@ -8,8 +8,15 @@ $(document).on('submit', '.form', function(e) {
         // $(".message").html(html);
         // alert('Спасибо за Ваш вопрос!');
         bootbox.alert({
-          message: "<div class='alert'> Спасибо!</div>", 
-          backdrop: true
+          message: "<div class='alert' > Спасибо!</div>", 
+          backdrop: true,
+          buttonName: {
+            'OK': {
+                label: 'OK',
+                className: 'btn'
+            },
+          }
+
         });
         }
     });
